@@ -6,6 +6,8 @@ A flutter app created for KDISC's YIP program and Google Developers Solution Cha
 ## Still in Development
 - Only The basic Front End has been developed.
 - Working on it.
+### NB
+- Devs are learning figma atm...
 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
