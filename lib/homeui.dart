@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key}) : super(key: key);
@@ -22,153 +21,235 @@ class _MyHomePage extends State<MyHomePage> {
   }
 
   @override
-  String user = 'user';
-  String location = 'Location1';
+  String user = 'Adi';
+  String location = 'Varkala';
+  String data = '''(II) Cliff , Varkala [ Snapped Line]
+(I) Edava, Varkala [Broken Pipe]
+(I) Kappil [Fallen Tree]
+(I) Nalanchira [Broken Pipe]
+(I) Kappil [Broken Pipe]''';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Drishti'), actions: [
-        IconButton(
-          icon: const Icon(
-            Icons.notifications,
-          ),
-          onPressed: () {},
-        ),
-        IconButton(
-          icon: const Icon(
-            Icons.search,
-          ),
-          onPressed: () {},
-        ),
-      ]),
       backgroundColor: const Color(0xffffffff),
       //
       //
       //
       body: SingleChildScrollView(
+        padding: const EdgeInsets.only(top: 60, left: 10, right: 10),
         child: Column(
           children: [
             Container(
-              alignment: Alignment.center,
-              padding: const EdgeInsets.all(10.0),
-              child: Text(''),
-            ),
-            //
-            Container(
-                padding: const EdgeInsets.all(10.0),
-                width: 350.0,
-                height: 150.0,
-                decoration: BoxDecoration(
-                    color: const Color(0xffeeeeee),
-                    borderRadius: BorderRadius.circular(24.0)),
-                child: Column(children: [
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      'Welcome $user',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 30,
-                          color: Colors.black),
-                      textAlign: TextAlign.right,
-                    ),
-                  ),
-                  Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      '\n No Alerts Found',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 21,
-                          color: Colors.black),
-                      textAlign: TextAlign.right,
-                    ),
-                  ),
-                ])),
-            Container(
-              alignment: Alignment.center,
-              padding: const EdgeInsets.all(10.0),
-              child: Text(''),
-            ),
-            //
-            //
-            //
-            Container(
-                padding: const EdgeInsets.all(10.0),
-                width: 350.0,
-                height: 350.0,
-                decoration: BoxDecoration(
-                    color: const Color(0xffeeeeee),
-                    borderRadius: BorderRadius.circular(24.0)),
-                child: Column(children: [
-                  Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      '''Statistics - $location''',
-                      style: TextStyle(
-                          fontFamily: 'roboto',
-                          fontSize: 35,
-                          color: Colors.black),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      ''' ''',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 15,
-                          color: Colors.black),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Container(
-                      color: Color(0xffeeeeee),
-                      alignment: Alignment.center,
-                      child: CircularPercentIndicator(
-                        radius: 50.0,
-                        lineWidth: 10.0,
-                        animation: true,
-                        percent: 75 / 100,
-                        center: Text(
-                          (75).toString() + "%",
-                          style: TextStyle(
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.black),
-                        ),
-                        backgroundColor: Colors.white38,
-                        circularStrokeCap: CircularStrokeCap.round,
-                        progressColor: Colors.black38,
+                width: 548,
+                height: 40,
+                child: Stack(children: <Widget>[
+                  Positioned(
+                      top: 0,
+                      left: 0,
+                      child: Text(
+                        'Drishti \n',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'Comfortaa',
+                            fontSize: 36,
+                            letterSpacing:
+                                0 /*percentages not used in flutter. defaulting to zero*/,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
                       )),
-                  Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      ''' ''',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 15,
-                          color: Colors.black),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      '''
-Active Incidents :100   
-Fixing Incidents :75
-Pending Fixes    :25
-Fixed Incidents  :50''',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 25,
-                          color: Colors.black),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
                 ])),
+            Container(
+                padding: EdgeInsets.only(top: 20),
+                width: 329,
+                height: 65,
+                child: Stack(children: <Widget>[
+                  Positioned(
+                      child: Text(
+                    'Welcome $user',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        color: Color.fromRGBO(0, 0, 0, 1),
+                        fontFamily: 'Comfortaa',
+                        fontSize: 32,
+                        fontWeight: FontWeight.w200),
+                  )),
+                ])),
+            Container(
+                // USER DATA
+                padding: EdgeInsets.only(top: 0),
+                width: 340,
+                height: 97,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 181, 182, 184),
+                  borderRadius: BorderRadius.all(
+                      Radius.elliptical(87.91732788085938, 88)),
+                ),
+                child: Stack(children: <Widget>[
+                  Positioned(
+                      top: 4.5,
+                      left: 2.5,
+                      child: Container(
+                          width: 97.91732788085938,
+                          height: 88,
+                          child: Stack(children: <Widget>[
+                            Positioned(
+                                top: 5.185039043426514,
+                                left: 12.184823989868164,
+                                child: //Mask holder Template
+                                    Container(
+                                        width: 77.77375030517578,
+                                        height: 77.77375030517578,
+                                        child: CircleAvatar(
+                                          backgroundColor: Colors.black,
+                                          radius: 70.0,
+                                          child: CircleAvatar(
+                                            backgroundImage:
+                                                AssetImage('assets/1.png'),
+                                            radius: 37.0,
+                                          ),
+                                        ))),
+                          ]))),
+                  Positioned(
+                      top: 25,
+                      left: 154,
+                      child: Text(
+                        '0',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'Abhaya Libre Medium',
+                            fontSize: 16,
+                            letterSpacing: 0,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                      )),
+                  Positioned(
+                      top: 25,
+                      left: 222,
+                      child: Text(
+                        '0',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'Abhaya Libre Medium',
+                            fontSize: 16,
+                            letterSpacing: 0,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                      )),
+                  Positioned(
+                      top: 25,
+                      left: 286,
+                      child: Text(
+                        '0',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'Abhaya Libre Medium',
+                            fontSize: 16,
+                            letterSpacing: 0,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                      )),
+                  Positioned(
+                      top: 53,
+                      left: 133,
+                      child: Text(
+                        'Reports',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'NovaSlim',
+                            fontSize: 16,
+                            letterSpacing: 0.5,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                      )),
+                  Positioned(
+                      top: 53,
+                      left: 206,
+                      child: Text(
+                        'Badges',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'NovaSlim',
+                            fontSize: 16,
+                            letterSpacing: 0.5,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                      )),
+                  Positioned(
+                      top: 53,
+                      left: 276,
+                      child: Text(
+                        'Rank',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'NovaSlim',
+                            fontSize: 16,
+                            letterSpacing: 0.5,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                      )),
+                ])),
+            Container(
+                // ALERTS
+                padding: EdgeInsets.only(top: 30),
+                width: 330,
+                height: 498,
+                child: Stack(children: <Widget>[
+                  Positioned(
+                      top: 0,
+                      left: 0,
+                      child: Container(
+                          width: 330,
+                          height: 418,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20),
+                              bottomRight: Radius.circular(20),
+                            ),
+                            color: Color.fromARGB(255, 181, 182, 184),
+                          ))),
+                  Positioned(
+                      top: 16.101266860961914,
+                      left: 15.855855941772461,
+                      child: Text(
+                        'Alerts',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'Montaga',
+                            fontSize: 36,
+                            letterSpacing:
+                                0 /*percentages not used in flutter. defaulting to zero*/,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                      )),
+                  Positioned(
+                      top: 58.55696105957031,
+                      left: 35.03063049316406,
+                      child: Text(
+                        '''................................................ 
+$data \n
+              --End Of Stats--
+..................................................''',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'Montaga',
+                            fontSize: 18,
+                            letterSpacing:
+                                0.7 /*percentages not used in flutter. defaulting to zero*/,
+                            fontWeight: FontWeight.normal,
+                            height: 2),
+                      )),
+                ]))
           ],
         ),
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:drishti/homeui.dart';
 import 'package:drishti/reportui.dart';
+import 'package:splashscreen/splashscreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -31,9 +32,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: '?',
       theme: ThemeData(
-        primarySwatch: buildMaterialColor(Color(0xFFFFFFFF)),
+        primarySwatch: buildMaterialColor(Color.fromARGB(255, 0, 0, 0)),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: SplashScreen(
+        seconds: 2,
+        navigateAfterSeconds: HomePage(),
+        title: new Text(
+          'Drishti',
+          style: TextStyle(
+              color: Color.fromRGBO(0, 0, 0, 1),
+              fontFamily: 'Comfortaa',
+              fontSize: 36,
+              letterSpacing:
+                  0 /*percentages not used in flutter. defaulting to zero*/,
+              fontWeight: FontWeight.normal,
+              height: 1),
+        ),
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      ),
     );
   }
 }

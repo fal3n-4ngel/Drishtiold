@@ -45,40 +45,43 @@ class _MyHomePage extends State<reportui> {
   //
   //
 
-  final ButtonStyle raisedButtonStyle = ElevatedButton.styleFrom(
-    onPrimary: Colors.black87,
-    primary: Colors.grey[300],
-    minimumSize: Size(100, 50),
-    padding: EdgeInsets.symmetric(horizontal: 10),
-    shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(30)),
-    ),
-  );
-
   @override
   Widget build(BuildContext context) {
+    TextEditingController locController = TextEditingController();
+    TextEditingController gradController = TextEditingController();
+    TextEditingController typController = TextEditingController();
+    TextEditingController remarController = TextEditingController();
     return Scaffold(
-      appBar: AppBar(title: const Text('Drishti'), actions: [
-        IconButton(
-          icon: const Icon(
-            Icons.notifications,
-          ),
-          onPressed: () {},
-        ),
-        IconButton(
-          icon: const Icon(
-            Icons.search,
-          ),
-          onPressed: () {},
-        ),
-      ]),
       backgroundColor: const Color(0xffffffff),
+
       //
       //
       //
       body: SingleChildScrollView(
+        padding: const EdgeInsets.only(top: 60, left: 10, right: 10),
         child: Column(
           children: [
+            Container(
+                alignment: Alignment.topLeft,
+                width: 548,
+                height: 40,
+                child: Stack(children: <Widget>[
+                  Positioned(
+                      top: 0,
+                      left: 0,
+                      child: Text(
+                        'Drishti \n',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'Comfortaa',
+                            fontSize: 36,
+                            letterSpacing:
+                                0 /*percentages not used in flutter. defaulting to zero*/,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                      )),
+                ])),
             Container(
               alignment: Alignment.center,
               padding: const EdgeInsets.all(10.0),
@@ -86,105 +89,100 @@ class _MyHomePage extends State<reportui> {
             ),
             //
             Container(
-                padding: const EdgeInsets.all(10.0),
-                width: 350.0,
-                height: 550.0,
+                padding: const EdgeInsets.only(top: 10.0),
+                width: 330,
+                height: 580.0,
                 decoration: BoxDecoration(
-                    color: const Color(0xffeeeeee),
+                    color: const Color.fromARGB(255, 181, 182, 184),
                     borderRadius: BorderRadius.circular(24.0)),
                 child: Column(children: [
                   Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      'REPORT',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 30,
-                          color: Colors.black),
-                      textAlign: TextAlign.center,
+                      width: 148,
+                      height: 70,
+                      child: Stack(children: <Widget>[
+                        Positioned(
+                            top: 20,
+                            left: 0,
+                            child: Text(
+                              'Report \n',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                  color: Color.fromRGBO(0, 0, 0, 1),
+                                  fontFamily: 'Comfortaa',
+                                  fontSize: 36,
+                                  letterSpacing:
+                                      0 /*percentages not used in flutter. defaulting to zero*/,
+                                  fontWeight: FontWeight.normal,
+                                  height: 1),
+                            )),
+                      ])),
+                  Container(
+                    padding: const EdgeInsets.fromLTRB(10, 30, 10, 10),
+                    width: 750.0,
+                    child: TextField(
+                      controller: locController,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Location',
+                      ),
                     ),
                   ),
                   Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      '',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 11,
-                          color: Colors.black),
-                      textAlign: TextAlign.right,
+                    padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    width: 750.0,
+                    child: TextField(
+                      controller: typController,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Type',
+                      ),
                     ),
                   ),
                   Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      'Report Screen \n',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 21,
-                          color: Colors.black),
-                      textAlign: TextAlign.right,
+                    padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    width: 750.0,
+                    child: TextField(
+                      controller: gradController,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Grade',
+                      ),
                     ),
                   ),
-                  TextFormField(
-                      decoration: const InputDecoration(
-                        icon: Icon(Icons.my_location),
-                        hintText: 'Location',
-                        labelText: 'Location*',
-                      ),
-                      controller: myloc),
-                  TextFormField(
-                      decoration: const InputDecoration(
-                        icon: Icon(Icons.ac_unit),
-                        hintText: 'Intensity',
-                        labelText: 'Intensity*',
-                      ),
-                      controller: myint),
-                  TextFormField(
-                      decoration: const InputDecoration(
-                        icon: Icon(Icons.cloud),
-                        hintText: 'Type',
-                        labelText: 'Type*',
-                      ),
-                      controller: mytyp),
-                  TextFormField(
-                      decoration: const InputDecoration(
-                        icon: Icon(Icons.details),
-                        hintText: 'Details',
-                        labelText: 'Details*',
-                      ),
-                      controller: mydet),
-                  TextFormField(
-                      decoration: const InputDecoration(
-                        icon: Icon(Icons.remember_me),
-                        hintText: 'Remarks',
-                        labelText: 'Remarks*',
-                      ),
-                      controller: myrem),
                   Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      '',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 11,
-                          color: Colors.black),
-                      textAlign: TextAlign.right,
+                    padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    width: 750.0,
+                    child: TextField(
+                      controller: remarController,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Remark',
+                      ),
                     ),
                   ),
-                  ElevatedButton(
-                    style: raisedButtonStyle,
-                    onPressed: () {
-                      print(myrem.text);
-                    },
-                    child: Text(
-                      'Submit',
-                      style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 16,
-                          color: Colors.black87),
-                    ),
-                  )
+                  Container(
+                      height: 50,
+                      margin: EdgeInsets.all(15),
+                      padding: const EdgeInsets.only(right: 10, left: 10),
+                      child: ElevatedButton(
+                        child: const Text(
+                          ' Report ',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              fontFamily: 'Comfortaa',
+                              fontSize: 25,
+                              letterSpacing:
+                                  0 /*percentages not used in flutter. defaulting to zero*/,
+                              fontWeight: FontWeight.normal,
+                              height: 1),
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            null;
+                          });
+                        },
+                      )),
                 ])),
           ],
         ),
