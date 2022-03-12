@@ -1,11 +1,14 @@
 
 # Drishti
-<a href ="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>
+
 <p align="center">
 <img src="https://i.ibb.co/qBLhSLb/Drishti.png">
     </p>
 Drishti is a simple mobile application created as a project for YIP KDISC and Google Devs Solution Challenge.
-This app aims to make reporting and spreading the news of accidents and dangers easier and effective. 
+This app aims to make reporting and spreading the news of accidents and dangers easier and effective.
+
+## Project Url
+<a href ="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>
 
 ## The Problem
   One of main reason of accidents and deaths caused by snapped power lines and broken pipelines is ts the lack of a way of effectively inform the locality about this incident, many walk into these traps withot knowing.
