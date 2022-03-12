@@ -25,7 +25,7 @@ This app aims to make reporting and spreading the news of accidents and dangers 
 
 ## Screenshots
 
-[Screen Rec Gif](https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/Screen Rec.gif)
+<a href = "https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/Screen Rec.gif">Screen Rec Gif </a>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
@@ -39,7 +39,7 @@ This app aims to make reporting and spreading the news of accidents and dangers 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 ## Contributors
-
+ 
 <!-- readme: fal3n-4ngel,collaborators,ice-weasel,contributors -start -->
 <table>
 <tr>
