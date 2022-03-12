@@ -1,5 +1,6 @@
 
 # Drishti
+<a href ="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a>
 <p align="center">
 <img src="https://i.ibb.co/qBLhSLb/Drishti.png">
     </p>
