@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:drishti/homeui.dart';
+import 'dart:async';
 import 'package:drishti/reportui.dart';
-import 'package:splashscreen/splashscreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,27 +30,51 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '?',
-      theme: ThemeData(
-        primarySwatch: buildMaterialColor(Color.fromARGB(255, 0, 0, 0)),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: SplashScreen(
-        seconds: 2,
-        navigateAfterSeconds: HomePage(),
-        title: new Text(
-          'Drishti',
-          style: TextStyle(
-              color: Color.fromRGBO(0, 0, 0, 1),
-              fontFamily: 'Comfortaa',
-              fontSize: 36,
-              letterSpacing:
-                  0 /*percentages not used in flutter. defaulting to zero*/,
-              fontWeight: FontWeight.normal,
-              height: 1),
+        title: '?',
+        theme: ThemeData(
+          primarySwatch: buildMaterialColor(Color.fromARGB(255, 0, 0, 0)),
+          visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        backgroundColor: Color.fromARGB(255, 255, 255, 255),
-      ),
+        debugShowCheckedModeBanner: false,
+        home: Splashscreen());
+  }
+}
+
+class Splashscreen extends StatefulWidget {
+  @override
+  _SplashscreenState createState() => _SplashscreenState();
+}
+
+class _SplashscreenState extends State<Splashscreen> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+        Duration(seconds: 4),
+        () => Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => HomePage())));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Container(
+          padding: EdgeInsets.only(top:0),
+          alignment: Alignment.center,
+          color: Colors.white,
+          child: Text(
+            'Drishti \n',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                color: Color.fromRGBO(0, 0, 0, 1),
+                fontFamily: 'Comfortaa',
+                fontSize: 36,
+                letterSpacing:
+                    0 /*percentages not used in flutter. defaulting to zero*/,
+                fontWeight: FontWeight.normal,
+                height: 1),
+          )),
     );
   }
 }
