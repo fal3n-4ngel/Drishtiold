@@ -1,6 +1,6 @@
 import mysql.connector as sqltor
 
-mycon=sqltor.connect(host='localhost',user='root',password='038869')
+mycon=sqltor.connect(host='localhost',user='root',password='')
 cursor=mycon.cursor(buffered=True)
 
 cmd1='create database drishti'
