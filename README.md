@@ -25,7 +25,7 @@ This app aims to make reporting and spreading the news of accidents and dangers 
 
 ## Screenshots
 
-<a href = "https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/Screen Rec.gif">Screen Rec Gif </a>
+<a href = "https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/screenshots.md">Screen Rec Gif </a>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
