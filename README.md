@@ -11,8 +11,8 @@ A flutter app created for KDISC's YIP program and Google Developers Solution Cha
 <img align='center' src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/3.png" width="800" height="600"></a>
 
 <img align ='left' src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/Screen%20Rec.gif" width="300" height="600"></a>
-<img align ='center' src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/Screenshot_1647077837.png" width="300" height="600"></a>
-<img align ='right' src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/Screenshot_1647077846.png" width="300" height="600"></a>
+<img align ='center' src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/1.png" width="500" height="320"></a>
+
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
