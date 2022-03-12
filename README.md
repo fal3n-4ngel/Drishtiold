@@ -24,6 +24,9 @@ This App aims to make reporting and spreading the news of accidents and dangers 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
+## Languages Used
+![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ## Contributors
 
 <!-- readme: fal3n-4ngel,collaborators,ice-weasel,contributors -start -->
