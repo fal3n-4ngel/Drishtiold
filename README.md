@@ -8,7 +8,7 @@ A flutter app created for KDISC's YIP program and Google Developers Solution Cha
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 <img align='left' width src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/Screen%20Rec.gif" width="300" height="600"></a>
-<img align='center' src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/3.png" width="700" height="550"></a>
+<img align='center' src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/3.png" width="600" height="500"></a>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 ## Contributors
