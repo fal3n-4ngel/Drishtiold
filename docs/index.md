@@ -30,11 +30,11 @@ This app aims to make reporting and spreading the news of accidents and dangers 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
-<img src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/04.png">
+<img src="https://ibb.co/LSDBFD4">
     </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
-<img src="https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/1.png"></a>
+<img src="https://ibb.co/LPkdyMY"></a>
 </p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
