@@ -1,6 +1,7 @@
 # Drishti
 Drishti is a simple mobile application created as a project for YIP KDISC and Google Devs Solution Challenge.
 This app aims to make reporting and spreading the news of accidents and dangers easier and effective. 
+
 ## The Problem
   One of main reason of accidents and deaths caused by snapped power lines and broken pipelines is ts the lack of a way of effectively inform the locality about this incident, many walk into these traps withot knowing.
   
@@ -19,8 +20,8 @@ This app aims to make reporting and spreading the news of accidents and dangers 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 ## Still in Development
-- Front End On Progess
-- Back End...
+- Front End on progress
+- Back End (still working on it)
 
 ## Screenshots
 
