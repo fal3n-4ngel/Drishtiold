@@ -1,10 +1,8 @@
-# Drishti 
-## v2 Front End- Design
-
-A flutter app created for KDISC's YIP program and Google Developers Solution Challenge
+# Drishti
+Drishti is a simple mobile application created as a project for YIP KDISC and Google Devs Solution Challenge.
 
 ## Still in Development
--  Front End On Progess
+- Front End On Progess
 - Back End...
 ## Screenshots
 
