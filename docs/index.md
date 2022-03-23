@@ -28,21 +28,16 @@ This app aims to make reporting and spreading the news of accidents and dangers 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 ## Still in Development
-- Front End on progress
+- Front End v3..
 - Back End (still working on it)
 
 ## Screenshots
 
-<a href = "https://github.com/Friendly-Neighbourhood-Tekys/Drishti/blob/Front-end-V2/screenshots/screenshots.md">Screen Rec Gif </a>
+
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
-<img src="https://i.ibb.co/x2jjR1Q/04.png">
-</p>
-  
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<p align="center">
-<img src="https://i.ibb.co/Sxswg25/1.png">
+<img src="https://i.ibb.co/4RkKDBB/main.png">
 </p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
